@@ -1,0 +1,14 @@
+Simple class, that listens on standard input and notifies delegate about voice level.
+
+Supports VoiceProcessing, so that possible output from iOS device is not considered in level value.
+
+How to use:
+
+* instance VoiceLevelNotifier class
+* implement VoiceLevelNotifier delegate
+* call startMonitoring on VoiceLevelNotifier delegate
+* call stopMonitoring, when done
+
+How to integrate with project:
+
+pod 'VoiceLevelMeter', :git => "https://github.com/sarsonj/VoiceLevelMeter.git"
