@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AFAA5F39-5B24-42ED-859B-4237C44C6B0E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VoiceMeter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39CE7AD43D6DE0D11DD7E5B3CC7FC71841AC6221</key>
+		<string>https://github.com/sarsonj/VoiceLevelMeter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VoiceMeter.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39CE7AD43D6DE0D11DD7E5B3CC7FC71841AC6221</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sarsonj/VoiceLevelMeter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39CE7AD43D6DE0D11DD7E5B3CC7FC71841AC6221</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39CE7AD43D6DE0D11DD7E5B3CC7FC71841AC6221</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VoiceMeter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

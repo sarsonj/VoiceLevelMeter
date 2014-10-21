@@ -21,7 +21,7 @@
     if (self) {
         self.weakSelf = self;
         self.audioController = [[AEAudioController alloc]
-                initWithAudioDescription:[AEAudioController nonInterleaved16BitStereoAudioDescription] inputEnabled:YES useVoiceProcessing:YES];
+                initWithAudioDescription:[AEAudioController nonInterleaved16BitStereoAudioDescription] inputEnabled:YES useVoiceProcessing:NO];
         id<AEAudioReceiver> receiver = [AEBlockAudioReceiver audioReceiverWithBlock:
                 ^(void                     *source,
                         const AudioTimeStamp     *time,
