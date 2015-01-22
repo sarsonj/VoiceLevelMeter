@@ -7,6 +7,10 @@
 
 @class AEAudioController;
 
+typedef enum VoiceLevelAlgorithm  {
+    kVoiceLevelAlgorithmNormal,
+    kVoiceLevelSlowDown
+} VoiceLevelAlgorithm;
 
 @protocol VoiceLevelNotifierDelegate
     -(void)updateFromVoiceNotifier:(float)level;
@@ -17,6 +21,8 @@
 @property (nonatomic, strong) AEAudioController *audioController;
 @property (weak) NSObject<VoiceLevelNotifierDelegate> *voiceLevelDelegate;
 @property (weak) VoiceLevelNotifier* weakSelf;
+@property float currentVoiceLevel;
+@property VoiceLevelAlgorithm algorithm;
 
 - (void)startMonitoring;
 - (void)stopMonitoring;

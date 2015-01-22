@@ -10,6 +10,7 @@
 #import "Accelerate/Accelerate.h"
 
 
+
 #define MAX_BUFF_LEN 10000
 
 @implementation VoiceLevelNotifier {
@@ -31,7 +32,14 @@
                         float currentMax = 0;
                         vDSP_vflt16(audio->mBuffers[0].mData, 1, floatBuffer, 1, frames);
                         vDSP_maxv(floatBuffer, 1, &currentMax, frames);
-                        [_weakSelf.voiceLevelDelegate updateFromVoiceNotifier:currentMax];
+                        float fixedMax;
+                        if (_weakSelf.algorithm == kVoiceLevelAlgorithmNormal) {
+                            fixedMax = currentMax;
+                        } else {
+                            fixedMax = currentMax;
+                        }
+                        [_weakSelf.voiceLevelDelegate updateFromVoiceNotifier:fixedMax];
+                        self.currentVoiceLevel = fixedMax;
                     }
                 }];
         [self.audioController addInputReceiver:receiver];
@@ -47,6 +55,7 @@
 
 -(void)stopMonitoring {
     [self.audioController stop];
+    self.currentVoiceLevel = 0;
 }
 
 
