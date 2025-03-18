@@ -42,7 +42,7 @@
                         self.currentVoiceLevel = fixedMax;
                     }
                 }];
-        [self.audioController addInputReceiver:receiver];
+        [self.audioController addInputReceiver:receiver completionBlock:nil];
     }
     return self;
 }
